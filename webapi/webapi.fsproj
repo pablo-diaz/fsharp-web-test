@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Models/CreateActivityModel.fs" />
+    <Compile Include="Controllers/ValuesController.fs" />
+    <Compile Include="Controllers/ActivityController.fs" />
+    <Compile Include="Startup.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\domain\domain.fsproj" />
+    <ProjectReference Include="..\workflows\workflows.fsproj" />
+  </ItemGroup>
+
+</Project>
